@@ -1,3 +1,13 @@
+# -*- encoding: utf-8 -*-
+'''
+file       :deco_2.py
+Description: func decorator with argus
+Date       :2022/02/24 18:32:19
+Author     :Xu Zhiwen
+version    :python3.7.8
+'''
+
+
 import time
 def time_1(count):
     def wrap_1(func):

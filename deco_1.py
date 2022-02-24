@@ -2,7 +2,7 @@
 # -*- encoding: utf-8 -*-
 '''
 file       :test.py
-Description:
+Description: func decorator
 Date       :2022/02/23 22:36:40
 Author     :Xu Zhiwen
 version    :python3.7.8
