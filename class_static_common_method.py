@@ -7,7 +7,8 @@ Author     :Xu Zhiwen
 version    :python3.7.8
 '''
 
-class Test(object):
+# class Test(object):
+class Test():
     x = 123
 
     def __init__(self) -> None:
@@ -77,7 +78,7 @@ t = Test()
 # t.foo1()
 
 # @classmethod : 无需实例化,可以调用类的方法，不可调用类中函数包含的方法
-# t.foo2()
+t.foo2()
 # 默认传入self,不可通过类调用具体的实例的方法,但是外部可以给通过给类传入一个实例调用
 # Test.bar1(t)
 # 应用场景： 直接使用类的名字创建一个实例的时候使用 ：User.create()
@@ -85,7 +86,7 @@ t = Test()
 
 # @staticmethod ：静态方法，无传入参数时，无论是用类还是用实例都无法调用类内部的方法和属性，完全独立的方法
 # t.foo3()
-# t.foo3(t)
+t.foo3(t)
 
 
 
