@@ -14,7 +14,7 @@ def deco1(func):
     def wrap_1(*args, **kwargs):
         print("enter wrapers_1 (%s, %s)" % args)
         result = func(*args, **kwargs)
-        print("exit wrapper_1 result * 2:{}".format(result * 2))
+        print("exit wrapper_1 result * 2 = {}".format(result * 2))
         return result * 2
     return wrap_1
 
@@ -23,7 +23,7 @@ def deco2(func):
     def wrap_2(*args, **kwargs):
         print("enter wrapers_2 (%s, %s)" % args)
         result = func(*args, **kwargs)
-        print("exit wrapper_2 result + 1:{} ".format(result + 1))
+        print("exit wrapper_2 result + 1 = {} ".format(result + 1))
         return result + 1 
     return wrap_2
 
@@ -32,8 +32,8 @@ def deco3(func):
     def wrap_3(*args, **kwargs):
         print("enter wrapers_3 (%s, %s)" % args)
         result = func(*args, **kwargs)
-        print("exit wrapper_3 result + 3:{}".format(result + 3))
-        return result + 3
+        print("exit wrapper_3 result - 3 = {}".format(result - 3))
+        return result - 3
     return wrap_3
 
 
