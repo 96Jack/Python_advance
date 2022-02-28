@@ -9,9 +9,6 @@ version    :python3.7.8
 
 
 
-from codecs import getreader
-
-
 class StudentMixin(object):
     def __init__(self, *, age, name, number):
         self.age = age
