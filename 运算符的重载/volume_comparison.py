@@ -34,4 +34,15 @@ b2 = Box(1, 2, 3)
 
 print(b2 > b1)
 
+# 应用场景：等级排序
+
+b3 = Box(1, 3, 4)
+b4 = Box(1, 2, 5)
+
+# sorted(iterabled) : 可以排序任何的可迭代的对象,不会改变原对象内元素的顺序
+# list.sort() ： 只为list定义，修改原始的list内的顺序。 
+for b in sorted([b1, b2, b3, b4]):
+    # vars(): 将对象转化成字典对象
+    print(vars(b))
+
 
