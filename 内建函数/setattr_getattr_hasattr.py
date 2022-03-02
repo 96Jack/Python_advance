@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 '''
 file       :setattr_getattr_hasattr.py
-Description:  attribute: 属性
+Description:  attribute: 属性  内建函数: setattr, getattr, hasattr
 Date       :2022/03/02 10:50:17
 Author     :Xu Zhiwen
 version    :python3.7.8
@@ -35,7 +35,7 @@ class B:
     def foo(self):
         return self.x ** self.y
 
-# 开辟一个内存空间
+# 调用父类开辟一个内存空间
 a = object.__new__(B)
 print(a.__dict__)
 # >
@@ -46,6 +46,7 @@ a.__init__()
 print(a.__dict__)
 # {'x': 111, 'y': 222}
 
+# 类属性及方法的保存位置
 print(B.__dict__)
 
 
