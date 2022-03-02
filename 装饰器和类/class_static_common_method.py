@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 '''
 file       :class_static_method.py
-Description:
+Description:  类有类的属性.实例有实例的属性
 Date       :2022/02/24 22:06:25
 Author     :Xu Zhiwen
 version    :python3.7.8
