@@ -45,8 +45,8 @@ class MyThread(threading.Thread):
             self.result += random.randint(1, 100)
 
 t = MyThread()
-t.q.put(1000)
 t.start()
+t.q.put(1000)
 print("result={}".format(t.result))
 
 
