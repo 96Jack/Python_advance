@@ -15,7 +15,7 @@ class Box:
         self.h = h
         self.l = l
     
-    # 将方法变成属性
+    # 将方法变成实例属性
     @property
     def V(self):
         return self.w * self.h * self.l
