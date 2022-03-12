@@ -15,7 +15,7 @@ class Box:
         self.h = h
         self.l = l
     
-    # 将方法变成实例属性
+    # 将类方法变成实例属性 ： 运算符的重载
     @property
     def V(self):
         return self.w * self.h * self.l
