@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 '''
 file       :async_p.py
-Description:
+Description:  # 一般携程(异步)的框架已经搭建好, 只需配置 : gevent / meinheld
 Date       :2022/03/04 16:34:32
 Author     :Xu Zhiwen
 version    :python3.7.8
@@ -52,7 +52,8 @@ print(t.is_alive())
 t1 = bar(10, 't1')
 t2 = bar(15, 't2')
 tasks = [asyncio.ensure_future(t1), asyncio.ensure_future(t2)]
-# loop协程的调度器
+# loop协程的调度器;事件循环
 loop = asyncio.get_event_loop()
 print("++++++++++\n", loop.run_until_complete(asyncio.wait(tasks)))
+
 
