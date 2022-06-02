@@ -18,10 +18,11 @@ import random
 def insertion_sort(sort_list):
     # 注意是从第二个位置开始向前插入元素
     for i in range(1, len(sort_list)):
-        # 从第i个元素开始向前比较，如果小于前一个元素，交换位置
+        # 从第i个元素开始向前(左)比较，如果小于前一个元素，交换位置
         for j in range(i, 0, -1):
             print("===================i :%s"% i)
             print("j :%s"% j)
+            # 若左边的数比右边的数大则交换两个数的位置
             if sort_list[j - 1] > sort_list[j]:
                 sort_list[j - 1], sort_list[j] = sort_list[j], sort_list[j - 1]
             print("lst : %s"% test_llst)
