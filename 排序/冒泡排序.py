@@ -2,6 +2,7 @@
 '''
 file       :冒泡排序.py
 Description: 比较相邻的元素。如果第一个比第二个大（升序），就交换他们两个
+             将相对大的数依次往后放， 从后往前排序
 Date       :2022/05/09 15:24:13
 Author     :Xu Zhiwen
 version    :python3.7.8

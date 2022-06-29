@@ -1,7 +1,10 @@
 # -*- encoding: utf-8 -*-
 '''
 file       :归并排序.py
-Description: 分治的思想： 先两两拆分直至拆分成单个元素，再从单个元素两两飘絮合并
+Description: 
+分治的思想： 先两两拆分直至拆分成单个元素，然后依次合并两个有序数组
+优点： 最好和最坏的算法复杂度都是Nlog(N)
+缺点： 占用更多的存储空间用来归并
 Date       :2022/05/10 23:46:34
 Author     :Xu Zhiwen
 version    :python3.7.8
@@ -12,9 +15,12 @@ import random
  
 # 递归分开 ： 二分分开
 def merge_sort(nums):
+    if len(nums) <= 1:
         return nums
     num = len(nums) // 2
+    # 将左半个列表依次拆分成单个元素
     left = merge_sort(nums[:num])
+    # 将有右半个列表依次拆分成单个元素
     right = merge_sort(nums[num:])
     return merge(left, right)
 
