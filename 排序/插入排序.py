@@ -18,7 +18,7 @@ import random
 def insertion_sort(sort_list):
     # 注意是从第二个位置开始向前插入元素
     for i in range(1, len(sort_list)):
-        # 从第i个元素开始向前(左)比较，如果小于前一个元素，交换位置
+        # 从第i个元素开始向前(左)比较
         for j in range(i, 0, -1):
             print("===================i :%s"% i)
             print("j :%s"% j)
