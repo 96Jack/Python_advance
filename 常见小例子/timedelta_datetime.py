@@ -2,6 +2,8 @@
 '''
 file       :timedelta_datetime.py
 Description:
+            strftime: string format time 
+
 Date       :2022/08/30 11:17:25
 Author     :Xu Zhiwen
 version    :python3.7.8
