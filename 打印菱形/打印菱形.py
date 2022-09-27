@@ -31,12 +31,15 @@ while layer & 1 == 0:
 for i in range(1, layer//2 + 2):
     # 打印两个空格一个*
     # 打印一个空格三个*
-    print(" "* (layer - i - 2), end="")
+    # print(" "* (layer - i - 2), end="")
+
+    # 多留两个空格：打印一层和三层的时候有空格
+    print(" "* (layer - i), end="")
     print("*"* (2*i - 1))
 
 for i in range(layer//2, 0, -1):
     # -1 表示倒叙
-    print(" "* (layer - i - 2), end="")
+    print(" "* (layer - i), end="")
     print("*"* (2*i - 1))
 
 
