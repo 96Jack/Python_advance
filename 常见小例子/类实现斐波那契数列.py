@@ -50,6 +50,6 @@ class FibIterator:
 
 
 if __name__ == '__main__':
-    fib = FibIterator(10)
+    fib = FibIterator(1)
     for num in fib:
         print(num, end=" ")
